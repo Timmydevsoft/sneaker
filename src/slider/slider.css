@@ -1,0 +1,25 @@
+.sliders__positioning--container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sliders__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.slide__buttons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 1);
+}
+
+.slide__buttons:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,144 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 5%;
+    border-bottom: solid 1.5px hsl(220, 14%, 75%);
+    height: 4rem;
+}
+
+.left__most--container{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+
+}
+
+.menu__container{
+    display: none;
+}
+
+.close-container{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    width: auto;
+}
+
+.nav_-button{
+    background: none;
+    border: solid 2px transparent;
+    height: 3.9rem;
+    color: hsl(220, 14%, 75%);
+}
+
+.nav_-button:hover{
+    color: hsl(220, 13%, 13%);
+    font-weight: 400;
+    cursor: pointer;
+    border-bottom: solid 2px hsl(26, 100%, 55%);
+}
+
+.rigth__most--container{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.car__container{
+    position: relative;
+}
+
+.cart__number{
+    position: absolute;
+     width: 1.5rem;
+     height: 1rem;
+     border: none;
+     top: -0.7rem;
+     color: hsl(0, 0%, 100%);
+     left: 0.9rem;
+     background-color:  hsl(26, 100%, 55%);
+     border-radius: 1rem;
+}
+
+.cart__number:hover,
+.basket:hover{
+    cursor: pointer;
+}
+
+.profile{
+    width: 40px;
+    height: 40px;
+}
+
+
+@media(max-width: 420px){
+    .header{
+        margin: 0;
+        width: 100vw;
+        border-bottom: none;
+        padding: 0 5%;
+    }
+
+    .menu__container{
+        display: block;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .left__most--container{
+        gap: 1.5rem;
+    }
+
+    .menu__container{
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .nav{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 1);
+        top: 0;
+        left: -100%;
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        z-index: 999;
+        height: 120%;
+        width: 60vw;
+        justify-content: flex-start;
+        transition: all 1.5s ease-out;
+    }
+
+    .nav.show{
+        left: 0;
+    }
+
+    .close-container{
+        display: block;
+        margin-bottom: 2rem;
+        background: none;
+        border: none;
+    }
+
+    .nav_-button{
+        height: 3rem;
+        color: hsl(220, 13%, 13%);
+        font-weight: 700;
+        font-size: 1.125rem;
+    }
+
+    .rigth__most--container{
+        gap: 1.5rem;
+    }
+}
+

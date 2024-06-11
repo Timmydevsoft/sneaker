@@ -1,0 +1,6 @@
+@import url("../src/header/Header.css");
+@import url("../src/addtocart/AddToCart.css");
+#root {
+  text-align: center;
+}
+

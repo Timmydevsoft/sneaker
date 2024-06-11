@@ -1,0 +1,17 @@
+.attribution {
+     font-size: 11px; 
+    text-align: center; 
+    margin: 2rem 0;
+    background: rgba(255, 255, 255, 1);
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+@media(max-width:420px){
+    .attribution{
+        margin-top: 0;
+        padding: 0 5%;
+    }
+}
+   

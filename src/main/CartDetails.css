@@ -1,0 +1,165 @@
+.sneakers__site{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.sneakers__left{
+    width: 500px;
+}
+
+.sneakers__right{
+    width: 500px;
+}
+
+.main__product{
+    width: 100%;
+    height: 50vh;
+    border-radius: 13px;
+}
+
+.left__thubnail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.125rem;
+    
+}
+
+.main__thumb{
+    width: 22%;
+    border-radius: 10px;
+    border: solid 3px transparent;
+}
+
+.main__thumb:hover{
+    border-color: hsl(26, 100%, 55%);
+    cursor: pointer;
+    filter: brightness(130%);
+}
+
+.sneaker__details{
+    width: 100%;
+   
+}
+
+.slider-container{
+   display: none;
+}
+
+/* RIGTH CONTENT STYLING STARTS HERE */
+
+.company__name{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    font-size: 1rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    text-align: left;
+    display: block;
+}
+
+.main__head{
+    color: hsl(220, 13%, 13%);
+    width: 80%;
+    font: 1rem;
+    text-align: left;
+}
+
+.sneaker__details{
+    text-align: left;
+    width: 80%;
+    color: hsl(220, 14%, 75%);
+    margin-top: 2rem;
+}
+
+.price__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.price_shown{
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.dicount{
+    width: 3rem;
+    height: 1.5rem;
+    border: none;
+    color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    background-color: hsl(25, 100%, 94%);;
+}
+
+.lined-price{
+    text-align: left;
+    color: hsl(220, 14%, 75%);
+    text-decoration: line-through;
+}
+
+@media(max-width: 420px){
+    .sneakers__site{
+        flex-direction: column;
+        margin-top: 0;
+        gap: 1.5rem;
+    }
+    .sneakers__left{
+        width: 100%;
+    }
+    
+
+    .main__product{
+        border-radius: 0;
+        height: 45vh;
+    }
+
+    .left__thubnail{
+        display: none;
+    }
+
+    .slider-container{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 20vh;
+     }
+
+    .sneakers__right{
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .company__name{
+        font-size: 14px;
+    }
+
+    .main__head{
+        font-size: 1.5rem;
+    }
+
+    .sneaker__details{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .price__container{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
